@@ -1,14 +1,23 @@
 {
+  
   "name": "react-styling",
+  "homepage": "https://rahul0552.github.io/Full-Stack-Developer-Roadmap/",  // 👈 Add this line
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+
+  
+   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     
+    "predeploy": "npm run build",   // 👈 Add this line
+    "deploy": "gh-pages -d dist"    // 👈 Add this line
   },
+
+  
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
